@@ -1,0 +1,47 @@
+
+
+   <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+    <img src="/static/Books-logo.png" width="75" height="75" class="d-inline-block align-top" alt="" loading="lazy">
+    <div style="padding-top: 20px;float: right;" >Books Recommender (with Sentiment Analyzer)</div>
+  </a>
+</nav>
+
+  <div class="container-fluid pt-1" >
+<div class="container p-6">
+  
+  {% if pred == 1%}
+  <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">AWESOME!</h4>
+  <p>"{{review}}"</p>
+  <hr>
+  <p class="mb-0">User Likes the Product very much!</p>
+</div>
+  {%endif%}
+  {% if pred == -1%}
+  <div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">Too Bad!</h4>
+  <p>"{{review}}"</p>
+  <hr>
+  <p class="mb-0">User didn't Like the Product ! Sorry!</p>
+</div>
+  {%endif%}
+<br><br>
+
+</div></div>
+        
+</body></html>   
+

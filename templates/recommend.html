@@ -1,0 +1,41 @@
+
+
+   <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+    <img src="/static/Books-logo.png" width="75" height="75" class="d-inline-block align-top" alt="" loading="lazy">
+    <div style="padding-top: 20px;float: right;" >Books Recommender (with Sentiment Analyzer)</div>
+  </a>
+</nav>
+
+  <div class="container-fluid pt-1" >
+<div class="container p-6">
+  <form action="/user_rec" class="form-inline" method="POST">
+  
+  <div class="form-group mx-sm-3 mb-2">
+    
+
+    <br>
+    <h1>User ID: </h1>&nbsp;
+    <input type="text" class="form-control" name="uid" placeholder="Enter User ID">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Recommend</button>
+</form>
+<br><br>
+
+</div></div>
+        
+</body></html>   
+
